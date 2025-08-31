@@ -1,1 +1,245 @@
+<html>
+    <head>
+        <link href="css/bootstrap.css" rel="stylesheet"/>
+        <link href="css/all.css" rel="stylesheet"/>
+        <script src="js/bootstrap.bundle.js"></script>
+        <style>
+#head
+{
+    height:30px;
+    width:100%;font-size:19px;
+    background:linear-gradient(#e46a96,#fdb062);
+	font-size: 19px;
+            
+            opacity: 0;
+            animation: fadeIn 2s forwards;
+        }
 
+        /* Fade-in effect for all elements */
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+            to {
+                opacity: 1;
+            }
+        }
+}
+#slider{
+height:500px;
+width:100%;
+}
+#menu
+{
+height:50px;
+width:100%;
+background:lightgrey;
+opacity: 0;
+            animation: slideIn 2s forwards;
+        }
+
+        @keyframes slideIn {
+            from {
+                transform: translateX(-100%);
+                opacity: 0;
+            }
+            to {
+                transform: translateX(0);
+                opacity: 1;
+            }
+        }
+}
+#box
+{
+height:250px;color:white;font-size:20px;
+width:100%;padding-top:50px;box-sizing:border-box;
+background:linear-gradient(45deg,#e46a96,#fdb062);
+            animation: fadeSection 2s forwards;
+}
+#about
+{
+box-sizing:border-box;
+height:300px;width:100%;padding-top:30px;background:lightgrey;
+ animation: fadeSection 2s forwards;
+}
+#services
+{
+height:300px;padding-top:30px;box-sizing:border-box;
+width:100%;
+background:rgba(211,211,211,.4);
+animation: fadeSection 2s forwards;
+}
+#footer{
+height:300px;padding-top:30px;
+width:100%;
+background:black;color:white;
+animation: fadeSection 2s forwards;
+}
+
+
+        </style>
+    </head>
+    <body>
+        <div class="container-fluid">
+            <div class="row" id="head" >
+                <div class="col-sm-1"></div>
+                <div class="col-sm-2" style="font-size:20px;">
+				<i class="fa-solid fa-phone "></i>
+				<i class="fa-brands fa-whatsapp "></i>
+				<i class="fa-brands fa-instagram"></i>
+				<i class="fa-brands fa-twitter"></i>
+				<i class="fa-brands fa-facebook"></i>
+				<i class="fa-solid fa-envelope"></i>
+				</div>
+                <div class="col-sm-2">+91 XXXXXXXXXX</div>
+                <div class="col-sm-2">email:sanjiwanisharma17@gmail.com</div>
+                <div class="col-sm-3"></div>
+                <div class="col-sm-2">Sign in</div>
+            </div>
+			<div class="row" id="menu">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-2"><h5 style="line-height:60px;">LANDING PAGE</h6></div>
+			<div class="col-sm-8">
+			<!--  Start Menu    -->
+			<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="#">Home</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+        <li class="nav-item">
+          <a class="nav-link active" aria-current="page" href="#">Blog</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link active" href="#">Services</a>
+        </li>
+		<li class="nav-item">
+          <a class="nav-link active" href="#">Order</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle active" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+            Dropdown
+          </a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="#">Action</a></li>
+            <li><a class="dropdown-item" href="#">Another action</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="#">Something else here</a></li>
+          </ul>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link disabled active" aria-disabled="true">Disabled</a>
+        </li>
+      </ul>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </div>
+</nav>
+			<!--   End Menu    -->
+			</div>
+			<div class="col-sm-1"></div>
+			</div>
+			<div class="row" id="slider">
+			<div class="col-sm-12">
+			<!--  slider start    -->
+			<div id="carouselExample" class="carousel slide">
+  <div class="carousel-inner">
+    <div class="carousel-item active">
+      <img src="beach1.jpg" style="max-height:500px;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="lucknow.jpg" style="max-height:500px;" class="d-block w-100" alt="...">
+    </div>
+    <div class="carousel-item">
+      <img src="delhi.jpg"  style="max-height:500px;" class="d-block w-100" alt="...">
+    </div>
+  </div>
+  <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+    <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Previous</span>
+  </button>
+  <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+    <span class="carousel-control-next-icon" aria-hidden="true"></span>
+    <span class="visually-hidden">Next</span>
+  </button>
+</div>
+			<!--  slider End    -->
+			</div>
+			</div>
+			<div class="row" id="box">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3">
+			<b><p><i class="fa-solid fa-list-check"></i>
+			 <strong>Management</strong></p></b>
+			 <p>We provide better management to our guest.</p>
+			</div>
+			<div class="col-sm-3">
+			<b><p><i class="fa-solid fa-car"></i>
+			 <strong>Ride</strong></p></b>
+			 <p>We provide proper conveyance for traveling with comfort.</p>
+			 </div>
+			<div class="col-sm-3"><p><i class="fa-solid fa-utensils"></i>
+			<b> <strong>Fooding</strong></p></b>
+			 <p>We provide proper fooding according to your taste.</p>
+			 </div>
+			<div class="col-sm-2"></div>
+			</div>
+			<div class="row" id="about">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-5">
+			<h3><b>ABOUT US</b></h3>
+			<h5>At Wanderlust Adventures, we believe that travel isn’t just about 
+			visiting new places; it’s about immersing yourself in unforgettable experiences 
+			that shape your perspective and enrich your life. With a passion for exploration
+			and a commitment to excellence, we curate extraordinary journeys that redefine 
+			the way you see the world.
+			  </h5>
+			<p><br/>
+</b><br/>
+			</p>
+			</div>
+			<div class="col-sm-5">
+			<img src="holiday.jpeg" height="250px" width="400px" style="padding-left:200px;">
+			</div>
+			<div class="col-sm-1"></div>
+			</div>
+			<div class="row" id="services">
+			<div class="col-sm-2"><h3>OUR SERVICES</h3></div>
+			<div class="col-sm-3">
+			<img src="car.jpg" height="250px" width="300px;">
+			</div>
+			<div class="col-sm-3">
+			<img src="map.jpg" height="250px" width="300px;">
+			</div>
+			<div class="col-sm-3">
+			<img src="menu.jpg" height="250px" width="300px;">
+			</div>
+			<div class="col-sm-1"></div>
+			</div>
+			<div class="row" id="footer">
+			<div class="col-sm-1"></div>
+			<div class="col-sm-3"><b>Address</b><br/><p>Plot No: Behind H.P pettrol pump,<br/>
+			Tedhi pulia Ring rd,Sector 5,<br/>Vikas nagar,<br/>Lucknow,<br/>Uttar Pradesh</p>
+			</div>
+			<div class="col-sm-3"><b>Contact</b><br/> Mobile No:<br/>+91XXXXXXXXXX<br/>+91XXXXXXXXX
+			<br/>email:<br/>example@gmail.com <br/> lko@gmail.com</div>
+			<div class="col-sm-3"><b>Usefull links</b>
+			<br/>Home<br/> About us <br/>best travel booking platform<br/> Contact us <br/>Registrations</div>
+			<div class="col-sm-2"><b>Stay Connected</b><br/>			
+			    <i class="fa-solid fa-phone"></i>:Phone</br>
+				<i class="fa-brands fa-whatsapp"></i>:Whatsapp<br/>
+				<i class="fa-brands fa-instagram"></i>:instagram<br/>
+				<i class="fa-brands fa-twitter"></i>:Twitter<br/>
+				<i class="fa-brands fa-facebook"></i>:Facebook<br/>
+				<i class="fa-solid fa-envelope"></i>:Message<br/>
+			</div>
+			
+			</div>
+        </div>
+    </body>
+</html>
